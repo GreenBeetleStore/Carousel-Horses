@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import ImageSlider from "./ImageSlider";
+
+const App = () => {
+  const slides = [
+    {url: 'http://localhost:3000/image-0.jpg', title: 'caballs'},
+    {url: 'http://localhost:3000/image-1.jpg', title: 'caballs'},
+    {url: 'http://localhost:3000/image-2.jpg', title: 'caballs'},
+    {url: 'http://localhost:3000/image-3.jpg', title: 'caballs'},
+    {url: 'http://localhost:3000/image-4.jpg', title: 'caballs'},
+    {url: 'http://localhost:3000/image-5.jpg', title: 'caballs'},
+    {url: 'http://localhost:3000/image-6.jpg', title: 'caballs'},
+    {url: 'http://localhost:3000/image-7.jpg', title: 'caballs'},
+  ]
+
+  const containerStyles = {
+    width: "1240px",
+    height: "540px",
+    margin: "0 auto"
+  }
+
+  const h1Style = {
+    margin: "0 45%",
+    color: "green"
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 style={h1Style}>Test Slider</h1>
+      <div style={containerStyles}>
+        <ImageSlider slides={slides} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
