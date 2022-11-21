@@ -1,3 +1,9 @@
+# Build React Image Slider From Scratch Tutorial
+
+You can find the full tutorial in this address:
+
+https://www.youtube.com/watch?v=SK9AlIbexOE
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
